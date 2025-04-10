@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Stock extends Model
 {
-    protected $fillable = ['name', 'symbol', 'exchange_id', 'currency'];
+    protected $fillable = ['company_name', 'symbol', 'exchange_id'];
 
     public function exchange() {
         return $this->belongsTo(Exchange::class);
